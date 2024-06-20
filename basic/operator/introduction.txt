@@ -1,0 +1,22 @@
+Operator :- It is symbol which perform operation on operand.
+
+20 + 10
++ := Operator
+20,10 :- Operand(Data)
+
+Operator
+  Unary
+  Binary
+  Ter.....
+------------------------------------
+Arithmetic (+,-,*,/,%,+=,-=,*=,%=)
+Relational (>,<,>=,<=,==,!=)
+Logical (&&, ||, !)
+Increment/Decrement (++,--)
+Bitwise (&, |, ^, <<, >>, ~)
+Conditional ( ? : )
+Assignment (=)
+Shorthand Operator : (+=, -=, *=, ?=, %=...)
+instanceOf
+
+
