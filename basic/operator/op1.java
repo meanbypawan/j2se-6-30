@@ -1,20 +1,15 @@
-/*
-  i/i = i
- */
 class TestMain{
     public static void main(String args[]){
-       /* 
-        float x;
-        x = 5.0F/2; // 2
-        System.out.println(x);
+        int x = 5;
         
-        1/2 * b * h;
-        where b & h both are the integer
-       */
-        int b,h;
-        b = 2;
-        h = 3;
-        float result = 1.0F/2 * b * h; // 0
-        System.out.println("Result : "+result);
+        int y = ++x + x++ + ++x + ++x * x++;
+        //    6 + 6   +   8 +   9 * 9
+        // 6 + 6 + 8 + 81
+        // 12 + 8 + 81
+        // 20 + 81
+        // 101
+        // x = 10
+        System.out.println("x : "+x);
+        System.out.println("y : "+y);
     }
 }

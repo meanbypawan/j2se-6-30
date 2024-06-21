@@ -17,12 +17,8 @@ class TestMain{
     b = 20;
     c = 30;
     d = 40;
-    boolean x = (a>b) & (++c<d);
-    /* 
-       x = (a>b) && (++c<d)
-            (10>20)
-       x =  false && (++c<d);     
-     */
+    boolean x = (a<b) | (++c<d);
+    
     System.out.println(x);  
     System.out.println("a : "+a);
     System.out.println("b : "+b);
