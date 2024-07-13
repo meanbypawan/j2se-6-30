@@ -6,6 +6,11 @@
  
    Shape
      |--getArea()
+  ------------------------
+  We can not instantiate abstract class or we can not create
+  the  object of abstract class.
+
+  Abstract only serve as parent class/ super class  
  */
 abstract class A{
  abstract public void wish();
