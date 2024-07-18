@@ -1,0 +1,43 @@
+Exception Handling :-
+  What is Exception :- Abnormal Termination Of a program
+  Why Exception Handling :- To improve the realiability of code
+  How
+  
+ ---------------------------------------------
+ Object
+   |
+  Throwable
+   |---Error X
+   |---Exception
+        |--ClassNotFoundException
+        |--IOException
+            |-FileNotFoundException
+        |--SQLException
+        |--RuntimeException
+           |--ArithmeticException
+           |--NullPoinerException
+           |--ArrayIndexOutOfBoundsException      
+           |--StringIndexOutOfBoundsException
+           |--IndexOutOfBoundsException
+           |--NumberFormattedException
+           |--InputMismatchException
+  Types Of Exception
+   a. Checked Exception :- All the child classes of
+      Exception excluding RuntimeException are called
+      Checked Exception
+   b. Unchecked Exception :- All The child classes of
+      RuntimeException are called UncheckedException
+ -------------------------------------------------------------------
+  1. try --> Write exception code inside try
+  2. catch --> only and only catch block is responsible
+     to handle the exception
+  3. finally --> Write code which should execute in 
+     case of exception and in case of non-exception both
+  4. throw --> It is used to throw the exception explicitly
+  5. throws --> Used to declare the exception
+ 
+ 
+ 
+ 
+ 
+  
