@@ -11,6 +11,7 @@ class TransactionLimitExceed extends Exception{
 }
 class ICICI{
     public void withdrawal() throws InsufficientBalanceException, TransactionLimitExceed{
+        throw new InsufficientBalanceException();
         /*
           ------
           ------
@@ -20,6 +21,11 @@ class ICICI{
 class TestMain{
     public static void main(String args[]){
         ICICI obj = new ICICI();
-        obj.withdrawal();
+        try{
+          obj.withdrawal();
+        }
+        catch(Exception e){
+         e.printStackTrace();           
+        }  
     }
 }
