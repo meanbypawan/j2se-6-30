@@ -1,13 +1,14 @@
 package testio;
 
-public class Customer {
+import java.io.Serializable;
+
+public class Customer implements Serializable{
   private int id;
   private String name;
   private String accountNumber;
   private String contact;
-  private int age;
-  private String address;
-
+  transient private int age;
+  transient private String address;
     public Customer(int id, String name, String accountNumber, String contact, int age, String address) {
         this.id = id;
         this.name = name;
