@@ -1,0 +1,84 @@
+MultiThreading :-
+  Why
+  What
+  How
+-------------------------------------------------------------------------
+MultiTasking :- Executing Mulitple Task Simultaneously
+
+ a. Process Based MultiTasking :- Executing Multiple Task Simultaneously where each task is seperate independent process.
+  E.g. 
+   We have multiple processes
+   p1---> VLC
+   p2---> GC
+   p3---> VS-code
+
+ b. Thread Based MultiTasking :- Executing Multiple Task simultaneously where each task is seperate independent part of same process/program.
+ 
+   Process v/s Thread
+   Process are the heavy weight whereas Threads are the ligh weight
+
+   RAM 1GB [1000 MB]
+   VLC --> 400 MB
+   GC  -->500MB
+   Vs-code --> 300MB
+   ----------------------------------------------------
+   Google Chrome (500 MB)
+   ----------------------------------------------------------------
+    youtube(T1) |  facebook.com(T2) |  geeksforgeeks(T3)
+   ----------------------------------------------------------------
+   // JApp.java
+   class Test{
+    public void m1(){
+      // 7000 --> 10 hours
+    }
+    public void m2(){
+     // 1000  --> 1 min
+    }
+   } 
+   class TestMain{
+    public static void main(String args[]){
+        Test obj = new Test();
+        obj.m1();
+        obj.m2();
+    }
+   }
+---------------------------------------------------------
+How :-
+We have 2 ways to implement MultiThreading
+ a. By extending Thread Class
+ b. By implementing Runnable Interface
+
+ In Both cases overriding of run() method is mendatory
+ ------------------------------------------------
+  Runnable {run();}
+  |--> Thread implements Runnable
+       run(){---}
+      |--- class Test extends Thread{}
+  |--> Test implments Runnable{
+         public void run(){}
+       }    
+ -------------------------------------------------------------
+  T1--> 5 times printing hello---> run(){--}
+  T2--> 5 times printing world --> run(){--}
+  T3--> 5 times printinf indore--> run(){--}      
+ What is run () :- run() method is job executed by a thread.
+--------------------------------------------------------------
+VLC ----> 2 ns
+GC  ----> 3ns      ------- CPU
+VSCODE -> 1 ns
+Dual core---------> CPU (2-hand)
+Quard core -------> CPU (4-hand)
+Hexa core  -------> CPU (6-hand)
+Octa core  -------> CPU (8-hand)
+---------------------------------------------------------
+Life Cycle Of Thread
+ New/Born
+ Runnable
+     -----------------> Wait()
+ Running
+ Terminate
+
+
+
+
+
